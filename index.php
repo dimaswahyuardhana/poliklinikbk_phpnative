@@ -7,7 +7,7 @@
     include_once 'model/Pasien.php';
     include_once 'model/Poli.php';
     include_once 'model/Obat.php';
-    // include_once 'model/Jadwal.php';
+    include_once 'model/Dokter.php';
     // include_once 'model/User.php';
 
     //area main di logic

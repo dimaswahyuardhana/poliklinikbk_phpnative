@@ -8,6 +8,10 @@
                             <i class="material-icons" role="presentation">dashboard</i>
                             Dashboard
                         </a>
+                        <a class="mdl-navigation__link" href="index.php?hal=dokter">
+                            <i class="material-icons">people</i>
+                            Dokter
+                        </a>
                         <a class="mdl-navigation__link" href="index.php?hal=pasien">
                             <i class="material-icons">person</i>
                             Pasien
