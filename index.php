@@ -21,7 +21,7 @@
         include_once $hal.'.php';
     }
     else{//jika tidak ada request dari menu di url tampilkan hal home.php
-        include_once 'dashboardadmin.php';
+        include_once 'login.php';
     }
     include_once 'footer.php';    
 ?>

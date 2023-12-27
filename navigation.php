@@ -1,3 +1,9 @@
+<?php 
+    if(isset($_SESSION['username'])&& isset($_SESSION['role'])){
+        $sesi = $_SESSION['username'];
+        $role = $_SESSION['role'];
+    }
+?>
 <div class="mdl-layout__drawer">
         <header>E-Klinik</header>
         <div class="scroll__wrapper" id="scroll__wrapper">
@@ -8,28 +14,28 @@
                             <i class="material-icons" role="presentation">dashboard</i>
                             Dashboard
                         </a>
+                        <?php 
+                            if($role == 'dokter'){
+                        ?>
                         <a class="mdl-navigation__link" href="index.php?hal=dokter">
                             <i class="material-icons">people</i>
-                            Dokter
+                            Periksa
                         </a>
                         <a class="mdl-navigation__link" href="index.php?hal=pasien">
                             <i class="material-icons">person</i>
-                            Pasien
+                            Riwayat Pasien
                         </a>
-                        <a class="mdl-navigation__link" href="index.php?hal=poli">
-                            <i class="material-icons" role="presentation">person</i>
-                            Poli
-                        </a>
+                        <?php } ?>
+                        <?php 
+                            if($role == 'admin'){
+                        ?>
                         <a class="mdl-navigation__link" href="index.php?hal=obat">
                             <i class="material-icons" role="presentation">map</i>
                             Obat
                         </a>
+                        <?php } ?>
                         <div class="mdl-layout-spacer"></div>
                         <hr>
-                        <a class="mdl-navigation__link" href="https://github.com/CreativeIT/getmdl-dashboard">
-                            <i class="material-icons" role="presentation">link</i>
-                            GitHub
-                        </a>
                     </nav>
                 </div>
             </div>

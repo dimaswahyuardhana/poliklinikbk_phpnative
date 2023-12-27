@@ -45,7 +45,7 @@
         <div class="mdl-card__supporting-text color--dark-gray">
             <div class="mdl-grid">
                 <div class="mdl-cell mdl-cell--12-col mdl-cell--4-col-phone">
-                    <span class="mdl-card__title-text text-color--smooth-gray">POLIKLINIK</span>
+                    <span class="mdl-card__title-text text-color--smooth-gray">E-Klinik</span>
                 </div>
                 <div class="mdl-cell mdl-cell--12-col mdl-cell--4-col-phone">
                     <span class="login-name text-color--white">Sign up</span>

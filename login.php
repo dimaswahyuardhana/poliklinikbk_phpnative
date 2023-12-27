@@ -45,7 +45,7 @@
                 <div class="mdl-card__supporting-text color--dark-gray">
                     <div class="mdl-grid">
                         <div class="mdl-cell mdl-cell--12-col mdl-cell--4-col-phone">
-                            <span class="mdl-card__title-text text-color--smooth-gray">POLIKLINIK</span>
+                            <span class="mdl-card__title-text text-color--smooth-gray">E-Klinik</span>
                         </div>
                         <div class="mdl-cell mdl-cell--12-col mdl-cell--4-col-phone">
                             <span class="login-name text-color--white">Sign in</span>
@@ -64,7 +64,7 @@
                             <a href="forgot-password.html" class="login-link">Forgot password?</a>
                         </div>
                         <div class="mdl-cell mdl-cell--12-col mdl-cell--4-col-phone submit-cell">
-                            <a href="sign-up.html" class="login-link">Don't have account?</a>
+                            <a href="register.php" class="login-link">Don't have account?</a>
                             <div class="mdl-layout-spacer"></div>
                             <button type="submit" value="Login" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button--colored-light-blue">
                                 Sign In
