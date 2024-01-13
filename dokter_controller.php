@@ -3,12 +3,16 @@
     include_once 'model/Dokter.php';
     //tangkap request form
     $nama_dokter = $_POST['nama'];
+    $nip = $_POST['nip'];
+    $password = $_POST['password'];
     $alamat_dokter = $_POST['alamat'];
     $nohp = $_POST['no_hp'];
     $poli = $_POST['nama_poli'];
     //step 2 simpan ke array
     $data = [
         $nama_dokter,
+        $nip,
+        $password,
         $alamat_dokter,
         $nohp,
         $poli

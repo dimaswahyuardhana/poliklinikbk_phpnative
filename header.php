@@ -1,7 +1,20 @@
 <?php 
-    if(isset($_SESSION['username'])){
+    $sesi = '';
+    $role = '';
+    $nip = '';
+
+    if (isset($_GET['nip'])) {
+        $nip = $_GET['nip'];
+    }
+
+    if (isset($_GET['role'])) {
+        $role = $_GET['role'];
+    }
+
+    if (isset($_SESSION['username']) && isset($_SESSION['role']) && isset($_SESSION['nip'])) {
         $sesi = $_SESSION['username'];
         $role = $_SESSION['role'];
+        $nip = $_SESSION['nip'];
     }
 ?>
 <!doctype html>
@@ -50,10 +63,11 @@
             <div class="mdl-layout-spacer"></div>
             <?php
             // Check if user is logged in
-                if(isset($sesi)) {
+                if(isset($sesi) && isset($nip)) {
             ?>
             <div class="avatar-dropdown" id="icon">
-                <a href="login.php"><span><?= $sesi ?></span></a>
+                <span><?= $sesi ?></span>
+                <span><?= $nip ?></span>
                 <img src="images/Icon_header.png">
             </div>
             <!-- Account dropdawn-->
@@ -63,10 +77,11 @@
                     <span class="mdl-list__item-primary-content">
                         <span class="material-icons mdl-list__item-avatar"></span>
                         <span><?= $sesi ?></span>
+                        <span><?= $nip ?></span>
                     </span>
                 </li>
                 <li class="list__item--border-top"></li>
-                <a href="logout.php">
+                <a href="<?= $role == 'dokter' ? 'login_dokter.php' : 'login.php'; ?>">
                     <li class="mdl-menu__item mdl-list__item">
                         <span class="mdl-list__item-primary-content">
                             <i class="material-icons mdl-list__item-icon text-color--secondary">exit_to_app</i>

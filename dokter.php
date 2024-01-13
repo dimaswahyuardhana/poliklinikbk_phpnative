@@ -27,6 +27,8 @@
                                 <tr>
                                     <th class="mdl-data-table__cell--non-numeric">NO</th>
                                     <th class="mdl-data-table__cell--non-numeric">NAMA</th>
+                                    <th class="mdl-data-table__cell--non-numeric">NIP</th>
+                                    <th class="mdl-data-table__cell--non-numeric">PASSWORD</th>
                                     <th class="mdl-data-table__cell--non-numeric">ALAMAT</th>
                                     <th class="mdl-data-table__cell--non-numeric">NOMOR HP</th>
                                     <th class="mdl-data-table__cell--non-numeric">POLI</th>
@@ -40,6 +42,8 @@
                                 <tr>
                                     <th scope="row"><?= $no ?></th>
                                     <td><?= $row['nama'] ?></td>
+                                    <td><?= $row['nip'] ?></td>
+                                    <td><?= $row['password'] ?></td>
                                     <td><?= $row['alamat'] ?></td>
                                     <td><?= $row['no_hp'] ?></td>
                                     <td><?= $row['nama_poli'] ?></td>

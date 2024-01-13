@@ -21,6 +21,14 @@
                                         <label class="mdl-textfield__label" for="nama">NAMA DOKTER</label>
                                     </div>
                                     <div class="mdl-textfield mdl-js-textfield full-size">
+                                        <input class="mdl-textfield__input" type="text" id="nip" name="nip">
+                                        <label class="mdl-textfield__label" for="nip">NIP</label>
+                                    </div>
+                                    <div class="mdl-textfield mdl-js-textfield full-size">
+                                        <input class="mdl-textfield__input" type="password" id="password" name="password">
+                                        <label class="mdl-textfield__label" for="password">PASSWORD</label>
+                                    </div>
+                                    <div class="mdl-textfield mdl-js-textfield full-size">
                                         <input class="mdl-textfield__input" type="text" id="alamat_dokter" name="alamat">
                                         <label class="mdl-textfield__label" for="alamat">ALAMAT</label>
                                     </div>
